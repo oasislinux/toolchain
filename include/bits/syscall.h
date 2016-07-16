@@ -324,10 +324,9 @@
 #define __NR_userfaultfd			323
 #define __NR_membarrier				324
 #define __NR_mlock2				325
-
-
-
-/* Repeat with SYS_ prefix */
+#define __NR_copy_file_range			326
+#define __NR_preadv2				327
+#define __NR_pwritev2				328
 
 #define SYS_read				0
 #define SYS_write				1
@@ -650,8 +649,11 @@
 #define SYS_getrandom				318
 #define SYS_memfd_create			319
 #define SYS_kexec_file_load			320
-#define SYS_bpf					321
+#define SYS_bpf				321
 #define SYS_execveat				322
-#define SYS_userfaultfd				323
+#define SYS_userfaultfd			323
 #define SYS_membarrier				324
 #define SYS_mlock2				325
+#define SYS_copy_file_range			326
+#define SYS_preadv2				327
+#define SYS_pwritev2				328
