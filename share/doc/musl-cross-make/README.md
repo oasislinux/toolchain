@@ -1,10 +1,9 @@
-This toolchain was built using musl-cross-make revision
-99ee12d604e564fa5b403c942e2809881d34d114.
+This toolchain was built using musl-cross-make tag v0.9.3.
 
 This revision uses the following toolchain software versions:
 
-* binutils 2.25.1
-* gcc 5.3.0
+* binutils 2.27
+* gcc 6.2.0
 * musl 1.1.15
 * gmp 6.1.1
 * mpc 1.0.3
