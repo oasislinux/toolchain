@@ -15,7 +15,6 @@ COMMON_CONFIG += LDFLAGS='-s'
 COMMON_CONFIG += --build=$(TARGET)
 COMMON_CONFIG += --with-build-sysroot=/
 COMMON_CONFIG += --disable-nls
-COMMON_CONFIG += --enable-deterministic-archives
 COMMON_CONFIG += --with-debug-prefix-map=$(CURDIR)=
 
 GCC_CONFIG += --with-native-system-header-dir=/include

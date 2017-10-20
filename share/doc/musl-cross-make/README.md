@@ -1,10 +1,10 @@
-This toolchain was built using musl-cross-make tag v0.9.5a.
+This toolchain was built using musl-cross-make commit 9c4ba813.
 
 This revision uses the following toolchain software versions:
 
 * binutils 2.27
-* gcc 6.3.0
-* musl 1.1.16
+* gcc 7.2.0
+* musl 1.1.17
 * gmp 6.1.1
 * mpc 1.0.3
 * mpfr 3.1.4
