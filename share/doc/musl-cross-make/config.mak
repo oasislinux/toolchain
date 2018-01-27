@@ -1,3 +1,5 @@
+GCC_VER = 7.3.0
+
 NATIVE = 1
 TARGET = x86_64-linux-musl
 
