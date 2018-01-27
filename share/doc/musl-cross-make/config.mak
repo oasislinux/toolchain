@@ -6,6 +6,7 @@ TARGET = x86_64-linux-musl
 DL_CMD = curl -Lo
 
 MUSL_CONFIG += CC=x86_64-linux-musl-gcc
+MUSL_CONFIG += CFLAGS='-fPIC'
 
 COMMON_CONFIG += CC='x86_64-linux-musl-gcc -static --static'
 COMMON_CONFIG += CXX='x86_64-linux-musl-g++ -static --static'
