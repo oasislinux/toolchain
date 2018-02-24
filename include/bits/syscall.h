@@ -330,6 +330,7 @@
 #define __NR_pkey_mprotect			329
 #define __NR_pkey_alloc				330
 #define __NR_pkey_free				331
+#define __NR_statx				332
 
 #define SYS_read				0
 #define SYS_write				1
@@ -663,3 +664,4 @@
 #define SYS_pkey_mprotect			329
 #define SYS_pkey_alloc				330
 #define SYS_pkey_free				331
+#define SYS_statx				332
