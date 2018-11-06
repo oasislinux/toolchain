@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
 #ifndef _NF_CONNTRACK_SCTP_H
 #define _NF_CONNTRACK_SCTP_H
 /* SCTP tracking. */
@@ -16,12 +17,6 @@ enum sctp_conntrack {
 	SCTP_CONNTRACK_HEARTBEAT_SENT,
 	SCTP_CONNTRACK_HEARTBEAT_ACKED,
 	SCTP_CONNTRACK_MAX
-};
-
-struct ip_ct_sctp {
-	enum sctp_conntrack state;
-
-	__be32 vtag[IP_CT_DIR_MAX];
 };
 
 #endif /* _NF_CONNTRACK_SCTP_H */

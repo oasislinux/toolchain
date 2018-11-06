@@ -1,4 +1,5 @@
-GCC_VER = 7.3.0
+GCC_VER = 8.2.0
+LINUX_VER = 4.19.1
 
 NATIVE = 1
 TARGET = x86_64-linux-musl
@@ -22,9 +23,12 @@ COMMON_CONFIG += --with-debug-prefix-map=$(CURDIR)=
 
 GCC_CONFIG += --with-native-system-header-dir=/include
 GCC_CONFIG += --disable-bootstrap
+GCC_CONFIG += --disable-decimal-float
 GCC_CONFIG += --disable-libgomp
 GCC_CONFIG += --disable-libquadmath
 GCC_CONFIG += --disable-lto
+GCC_CONFIG += --disable-multilib
+GCC_CONFIG += --enable-default-pie
 
 # only static
 COMMON_CONFIG += --disable-shared

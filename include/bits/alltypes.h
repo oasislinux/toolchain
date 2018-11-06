@@ -139,22 +139,22 @@ typedef signed char     int8_t;
 #endif
 
 #if defined(__NEED_int16_t) && !defined(__DEFINED_int16_t)
-typedef short           int16_t;
+typedef signed short    int16_t;
 #define __DEFINED_int16_t
 #endif
 
 #if defined(__NEED_int32_t) && !defined(__DEFINED_int32_t)
-typedef int             int32_t;
+typedef signed int      int32_t;
 #define __DEFINED_int32_t
 #endif
 
 #if defined(__NEED_int64_t) && !defined(__DEFINED_int64_t)
-typedef _Int64          int64_t;
+typedef signed _Int64   int64_t;
 #define __DEFINED_int64_t
 #endif
 
 #if defined(__NEED_intmax_t) && !defined(__DEFINED_intmax_t)
-typedef _Int64          intmax_t;
+typedef signed _Int64   intmax_t;
 #define __DEFINED_intmax_t
 #endif
 
