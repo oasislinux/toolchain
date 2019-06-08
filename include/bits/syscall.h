@@ -331,6 +331,8 @@
 #define __NR_pkey_alloc				330
 #define __NR_pkey_free				331
 #define __NR_statx				332
+#define __NR_io_pgetevents			333
+#define __NR_rseq				334
 
 #define SYS_read				0
 #define SYS_write				1
@@ -665,3 +667,5 @@
 #define SYS_pkey_alloc				330
 #define SYS_pkey_free				331
 #define SYS_statx				332
+#define SYS_io_pgetevents			333
+#define SYS_rseq				334

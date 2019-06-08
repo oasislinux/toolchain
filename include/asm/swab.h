@@ -5,6 +5,8 @@
 #include <linux/types.h>
 
 
+#ifdef __GNUC__
+
 static __inline__  __u32 __arch_swab32(__u32 val)
 {
 	__asm__("bswapl %0" : "=r" (val) : "0" (val));
@@ -33,5 +35,7 @@ static __inline__  __u64 __arch_swab64(__u64 val)
 #endif
 }
 #define __arch_swab64 __arch_swab64
+
+#endif /* __GNUC__ */
 
 #endif /* _ASM_X86_SWAB_H */
