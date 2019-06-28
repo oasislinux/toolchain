@@ -1,1 +1,1 @@
-../x86_64-linux-musl/bin/ld
+x86_64-linux-musl-ld.bfd

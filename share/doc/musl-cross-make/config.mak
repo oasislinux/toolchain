@@ -20,7 +20,6 @@ COMMON_CONFIG += CXXFLAGS='-O2 -pipe'
 COMMON_CONFIG += LDFLAGS='-s'
 
 COMMON_CONFIG += --build=x86_64-mcm-linux-musl
-COMMON_CONFIG += --with-build-sysroot=/
 COMMON_CONFIG += --disable-nls
 COMMON_CONFIG += --with-debug-prefix-map=$(CURDIR)=
 
@@ -32,6 +31,8 @@ GCC_CONFIG += --disable-libquadmath
 GCC_CONFIG += --disable-lto
 GCC_CONFIG += --disable-multilib
 GCC_CONFIG += --enable-default-pie
+
+BINUTILS_CONFIG += --program-prefix=$(TARGET)-
 
 KERNEL_VARS += HOSTLDFLAGS=-static
 
