@@ -194,7 +194,7 @@ struct ebt_entry {
 static __inline__ struct ebt_entry_target *
 ebt_get_target(struct ebt_entry *e)
 {
-	return (void *)e + e->target_offset;
+	return (void *)((char *)e + e->target_offset);
 }
 
 /* {g,s}etsockopt numbers */

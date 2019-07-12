@@ -33,9 +33,3 @@ GCC_CONFIG += --disable-multilib
 GCC_CONFIG += --enable-default-pie
 
 BINUTILS_CONFIG += --program-prefix=$(TARGET)-
-
-KERNEL_VARS += HOSTLDFLAGS=-static
-
-# only static
-COMMON_CONFIG += --disable-shared
-MUSL_CONFIG += --disable-shared
