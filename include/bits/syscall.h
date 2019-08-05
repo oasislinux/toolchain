@@ -333,6 +333,10 @@
 #define __NR_statx				332
 #define __NR_io_pgetevents			333
 #define __NR_rseq				334
+#define __NR_pidfd_send_signal			424
+#define __NR_io_uring_setup			425
+#define __NR_io_uring_enter			426
+#define __NR_io_uring_register			427
 
 #define SYS_read				0
 #define SYS_write				1
@@ -669,3 +673,7 @@
 #define SYS_statx				332
 #define SYS_io_pgetevents			333
 #define SYS_rseq				334
+#define SYS_pidfd_send_signal			424
+#define SYS_io_uring_setup			425
+#define SYS_io_uring_enter			426
+#define SYS_io_uring_register			427

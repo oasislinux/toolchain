@@ -1,4 +1,4 @@
-This toolchain was built using musl-cross-make[0] commit 6fa505d3ee.
+This toolchain was built using musl-cross-make[0] commit 6b84e83210.
 
 The config.mak that was used can be found alongside this document.
 

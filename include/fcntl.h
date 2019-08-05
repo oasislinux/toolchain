@@ -36,8 +36,9 @@ int openat(int, const char *, int, ...);
 int posix_fadvise(int, off_t, off_t, int);
 int posix_fallocate(int, off_t, off_t);
 
-#define O_SEARCH  O_PATH
-#define O_EXEC    O_PATH
+#define O_SEARCH   O_PATH
+#define O_EXEC     O_PATH
+#define O_TTY_INIT 0
 
 #define O_ACCMODE (03|O_SEARCH)
 #define O_RDONLY  00
@@ -128,6 +129,7 @@ int posix_fallocate(int, off_t, off_t);
 #define F_SEAL_SHRINK	0x0002
 #define F_SEAL_GROW	0x0004
 #define F_SEAL_WRITE	0x0008
+#define F_SEAL_FUTURE_WRITE	0x0010
 
 #define F_GET_RW_HINT		1035
 #define F_SET_RW_HINT		1036
