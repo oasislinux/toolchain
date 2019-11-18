@@ -1,5 +1,5 @@
 LINUX_VER = 4.19.52
-MUSL_VER = 1.1.23
+GCC_VER = 9.2.0
 
 NATIVE = 1
 TARGET = x86_64-linux-musl
