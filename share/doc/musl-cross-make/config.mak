@@ -1,4 +1,3 @@
-LINUX_VER = 4.19.52
 GCC_VER = 9.2.0
 
 NATIVE = 1
@@ -30,5 +29,3 @@ GCC_CONFIG += --disable-libquadmath
 GCC_CONFIG += --disable-lto
 GCC_CONFIG += --disable-multilib
 GCC_CONFIG += --enable-default-pie
-
-BINUTILS_CONFIG += --program-prefix=$(TARGET)-
